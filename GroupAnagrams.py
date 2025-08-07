@@ -23,7 +23,6 @@ class Solution():
                 groups[sortedwords].append(i)
             else:
                 groups[sortedwords] = [i]
-            print(groups.items())
         return list(groups.values())
           
 
