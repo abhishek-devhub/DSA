@@ -12,12 +12,20 @@
 
 # Input: strs = ["x"]
 
-Output: [["x"]]
-class Solution:
-    def GroupAnagram(self,groups:[str]):
-        anagram = []
-        for i in range(len(groups)):
+# Output: [["x"]]
 
-b = Solution()
-print(b.GroupAnagram(["act","pots","tops","cat"]))
+class Solution():
+    def GroupAnagram(self , s:list[str]):
+        groups = {}
+        for i in s:
+            sortedwords = ''.join(sorted(i))
+            if sortedwords in groups:
+                groups[sortedwords].append(i)
+            else:
+                groups[sortedwords] = [i]
+            print(groups.items())
+        return groups.values()
+          
 
+anagram = Solution()
+print(anagram.GroupAnagram(["act","pots","tops","cat","stop","hat"]))
