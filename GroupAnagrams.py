@@ -24,7 +24,7 @@ class Solution():
             else:
                 groups[sortedwords] = [i]
             print(groups.items())
-        return groups.values()
+        return list(groups.values())
           
 
 anagram = Solution()
