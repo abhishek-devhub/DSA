@@ -1,4 +1,2 @@
-       else:
-                groups[sortedwords] = [i]
-        return groups.values()
-          
+print(encodedstr)
+print(soln.decode(encodedstr))
