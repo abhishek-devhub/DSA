@@ -21,6 +21,6 @@ class Solution:
 
 soln = Solution()
 
-# print(soln.decode(soln.encode([])))        
+# print(soln.decode(soln.encode([])))        this gives me confusion refer when you are free
 # print(soln.decode(soln.encode([""])))     
 print(soln.decode(soln.encode(["cat",'acr','tommy','abhisek'])))
